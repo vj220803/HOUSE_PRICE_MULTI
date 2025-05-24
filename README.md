@@ -41,16 +41,49 @@ To build an accurate, efficient, and user-friendly House Price Prediction system
 └── README.md                    # Project overview
 ```
 
-## How It Works
-### 1. User Inputs: 
-Users enter property information (location, size, amenities, etc.).
-### 2. Preprocessing: 
-- Categorical features are encoded using saved LabelEncoders.
-- Numerical features are scaled using the StandardScaler.
-- Polynomial features are generated.
-### 3.Prediction:
-- The processed input is passed to a trained Lasso model.
-- The model outputs the predicted price in lakhs.
+
+## Detailed Project Flow
+### 1. Data Loading and Preprocessing
+- Imported data using pandas
+- Categorical columns encoded using Label Encoding
+- Applied StandardScaler to normalize numerical features for improved model performance
+- Checked multicollinearity and correlation matrix for insights
+
+### 2. Feature Engineering
+- Used PolynomialFeatures (degree = 2) to generate new interaction terms and higher-order features
+- Captured non-linear patterns between variables and improved predictive accuracy
+
+### 3. Model Training
+- Trained and saved three models:
+- Multiple Linear Regression – baseline model
+- Ridge Regression – uses L2 regularization to reduce overfitting
+- Lasso Regression – uses L1 regularization to eliminate irrelevant features
+- Each model was trained on the preprocessed and polynomial-transformed dataset. Final models were saved using joblib in the model_file/ folder.
+
+### 4. Model Evaluation
+Evaluated using:
+- MAE: Mean Absolute Error
+- MSE: Mean Squared Error
+- RMSE: Root Mean Squared Error
+- R² Score: Measures overall model fit
+- Ridge and Lasso showed improved generalization and reduced error over standard regression.
+
+### 5. Web App Deployment
+- Built a user-friendly Streamlit interface
+- Takes user input (area, bedrooms, etc.) from sidebar form
+- Applies saved StandardScaler and PolynomialFeatures
+- Predicts using saved Multiple Linear Regression model
+- Displays real-time house price prediction in INR
+
+
+### 6. Model Evaluation 
+
+| Model              | MAE ↓   | MSE ↓   | RMSE ↓  | R² Score ↑ |
+|--------------------|---------|---------|---------|-------------|
+| Linear Regression  | Higher  | Higher  | Higher  | Lower       |
+| Ridge Regression   | Lower   | Lower   | Lower   | Higher      |
+| Lasso Regression   | Lower   | Lower   | Lower   | Higher      |
+
 
 
 ## How to Run the App Locally
