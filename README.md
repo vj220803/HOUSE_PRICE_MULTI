@@ -75,7 +75,6 @@ Evaluated using:
 - Predicts using saved Multiple Linear Regression model
 - Displays real-time house price prediction in INR
 
-
 ### 6. Model Evaluation 
 
 | Model              | MAE ↓   | MSE ↓   | RMSE ↓  | R² Score ↑ |
@@ -83,6 +82,7 @@ Evaluated using:
 | Linear Regression  | Higher  | Higher  | Higher  | Lower       |
 | Ridge Regression   | Lower   | Lower   | Lower   | Higher      |
 | Lasso Regression   | Lower   | Lower   | Lower   | Higher      |
+
 
 
 
@@ -125,6 +125,14 @@ streamlit run app.py
 - joblib
 
 
+## Key Concepts Demonstrated
+- Multiple Regression Techniques
+- Polynomial Feature Transformation
+- Regularization (Ridge & Lasso)
+- Model Evaluation Metrics
+- Scikit-learn Pipelines
+- Web App Deployment using Streamlit
+- .pkl Model Serialization for Real-time Use
 
 
 
