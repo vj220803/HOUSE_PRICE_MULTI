@@ -3,6 +3,7 @@
 A Machine Learning-based web application that predicts house prices using features such as State, City, Locality,   Property Type, BHK, Size in SqFt, Price per SqFt, Year Built, Furnished Status, Floor Number, Total Floors, Age of Property(years), Nearby Schools, Hospitals, Parking Transport Acess, Parking Space, Security, Amenities, Facing, Owner Type, Availability Status. 
 This project demonstrates how to build a production-ready regression pipeline using Multiple Linear Regression, Ridge, and Lasso models enhanced with Polynomial Features.
 
+![Features](https://github.com/vj220803/HOUSE_PRICE_MULTI/blob/main/House%20Price%20Prediction(Multiple%20Features)%20-%20visual%20selection.png)
 
 ## Objective
 To build an accurate, efficient, and user-friendly House Price Prediction system that leverages real estate data to provide real-time pricing predictions. It demonstrates regression modeling, feature engineering, evaluation, and deployment using a modern web interface.
