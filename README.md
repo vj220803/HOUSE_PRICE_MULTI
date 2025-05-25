@@ -135,6 +135,11 @@ streamlit run app.py
 - Web App Deployment using Streamlit
 - .pkl Model Serialization for Real-time Use
 
+## Final UI Dashboard
+![Dashboard](https://github.com/vj220803/HOUSE_PRICE_MULTI/blob/main/HOUSI_MULTI_UI.png)
 
+## Author
+Vijayan Naidu 
+Student @ Fergusson College(Autonomous) Pune, Maharashtra
 
 
