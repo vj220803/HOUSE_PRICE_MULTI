@@ -139,7 +139,7 @@ streamlit run app.py
 ![Dashboard](https://github.com/vj220803/HOUSE_PRICE_MULTI/blob/main/HOUSI_MULTI_UI.png)
 
 ## Author
-Vijayan Naidu 
-Student @ Fergusson College(Autonomous) Pune, Maharashtra
+### Vijayan Naidu 
+- MSc Data Science Student @ Fergusson College(Autonomous) Pune, Maharashtra
 
 
